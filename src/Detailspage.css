@@ -1,0 +1,181 @@
+.detailspage {
+  padding: 20px;
+  color: #fff;
+  background-color: #020203;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.back-navigation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.back-icon {
+  cursor: pointer;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.poster-section {
+  width: 30%;
+}
+
+.poster-img {
+  width: 80%;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+  
+.info-section {
+  width: 65%;
+  /* padding-top: 14vh; */
+}
+
+.anime-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.info-tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.info-tags span {
+  padding: 5px 10px;
+  background-color: #242323;
+  border-radius: 5px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.watch-now, .add-to-list {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 148px;
+  height: 50px;
+  font-weight: bold;
+  color: #fff;
+  size: 30px;
+}
+
+.watch-now {
+  background-color: #bb0a0a;
+}
+
+.add-to-list {
+  background-color: #0e6283;
+}
+
+.anime-description {
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+
+.episodes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  padding-top: 20px;
+}
+
+.episode-card {
+  width: 40px;
+  height: 60px;
+  padding: 10px;
+  background-color: #1f1e1e;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.play-icon {
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.share-section {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.additional-info {
+  margin-top: 40px;
+  margin-left: 0px;
+}
+
+.info-item {
+  margin-bottom: 1px;
+}
+
+.info-item p:first-child {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Other existing styles */
+
+.share-section {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.share-section p {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.share-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.share-icon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.share-icon:hover {
+  transform: scale(1.2);
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.twitter {
+  color: #00acee;
+}
+
+.reddit {
+  color: #ff4500;
+} 
+
+.more {
+  color: #666; 
+}
+

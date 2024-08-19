@@ -1,0 +1,101 @@
+/* src/components/Login.css */
+
+
+.login-container {
+    display: flex;
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    height: 100vh; /* Full height of the viewport */
+    width: 100vh;
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    
+  }
+  
+  
+  
+  .form-container {
+    background: rgba(48, 47, 47, 0.9); /* Semi-transparent background */
+    padding: 80px 60px; /* Increase padding for larger size */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    
+    max-width: 600px; /* Increase the maximum width */
+    width: 100%;
+    min-height: 550px; /* Minimum height */
+    
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .social-login {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .facebook-btn, .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #4267B2; /* Facebook blue */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .google-btn {
+    background-color: #DB4437; /* Google red */
+  }
+  
+  .facebook-btn:hover {
+    background-color: #365899;
+  }
+  
+  .google-btn:hover {
+    background-color: #C53829;
+  }
+  
+  .social-icon {
+    margin-right: 8px;
+    font-size: 20px; /* Adjust icon size */
+  }
+  .ss
+  {
+     text-align: center;
+  }

@@ -1,0 +1,137 @@
+/* AnimeSpotlight.css */
+
+.anime-spotlight {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;  
+  width: 1800px;
+  height: 380px;
+  margin: 0 auto;
+  background: #000; /* Dark background to blend with video */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.anime-spotlight:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* Shadow on hover */
+}
+
+.slide {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide-video,
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 480px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.slide-content h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  animation: fadeInUp 1s ease-out;
+}
+
+.slide-content p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+
+.category {
+  font-size: 1rem;
+  color: #f0a;
+  font-weight: bold;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 0.2s forwards;
+}
+
+.watch-now-btn {
+  background: #e41111; /* Bright button color */
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 1.12s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.watch-now-btn:hover {
+  background: #dd0505;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.prev,
+.next,
+.mute-toggle {
+  position: absolute;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: #fff;
+  font-size: 1.0rem;
+  cursor: pointer;
+  border-radius: 60%;
+  padding: 12px;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.prev {
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.mute-toggle {
+  bottom: 90px;
+  right: 20px;
+}
+
+.prev:hover,
+.next:hover,
+.mute-toggle:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+  box-shadow: 0 6cap 12px rgba(0, 0, 0, 0.4);
+  visibility: inherit;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
